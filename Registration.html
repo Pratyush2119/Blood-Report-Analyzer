@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register to Continue</title>
+        <link rel="icon" href="Resources/img/medical-report.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="Resources/css/queries.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+        <style>
+            table{
+                background:rgba(0,0,0,0.5);
+            }
+            body{
+                background-image:url(Resources/img/20601.jpg);
+                background-size: cover;
+                background-position: center;
+                color:white;
+            }
+            a:hover{
+                color:cyan;
+            }
+            input[type=submit]:hover{
+                cursor: pointer;
+            }
+            #asterisk,#msg {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="register-form">
+            <table border="1px solid black" width="60%" style="height:700px;margin: auto" align="center" >
+                <tr>
+                    <td>
+                        <div class="row">
+                            <h2>Register first and allow us to serve you</h2>
+                        </div>
+                        <center><span id="msg">Field with * marks are Mandatory!</span></center>
+                        <div class="row">
+                            <form method="post" action="regcomplete.php" class="contact-form" autocomplete="off">
+                                <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label for="name">Name : <span id="asterisk">*</span></label>
+                                    </div>
+                                    <div class="col span-2-of-3">
+                                        <input type="text" name="name" id="name" placeholder="Your Name" required> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label for="email">Email : <span id="asterisk">*</span></label>
+                                    </div>
+                                    <div class="col span-2-of-3">
+                                        <input type="email" name="email" id="email" placeholder="Your Email" required> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label for="uname">Username : <span id="asterisk">*</span></label>
+                                    </div>
+                                    <div class="col span-2-of-3">
+                                        <input type="text" name="uname" id="uname" placeholder="Your username" required> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label for="pass">Password : <span id="asterisk">*</span></label>
+                                    </div>
+                                    <div class="col span-2-of-3">
+                                        <input type="password" name="pass" id="pass" placeholder="Enter password" required> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label for="gender">Gender : <span id="asterisk">*</span></label>
+                                    </div>
+                                    <div class="col span-2-of-3" align="center">
+                                        <input type="radio" name="gender" id="male" value="Male" style="margin-right: 5px"/>Male
+                                        <input type="radio" name="gender" id="female" value="Female" style="margin-left: 15px;margin-right: 5px"/>Female
+                                        <input type="radio" name="gender" id="others" value="Others" style="margin-left: 15px;margin-right: 5px"/>Others
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label for="dob">Date of Birth : <span id="asterisk">*</span></label>
+                                    </div>
+                                    <div class="col span-2-of-3" align="center">
+                                        <input type="date" name="dob" id="dob" required/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label for="phone">Phone</label>
+                                    </div>
+                                    <div class="col span-2-of-3" align="center">
+                                        <input type="tel" name="phone" id="phone" maxlength="10" required/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col span-1-of-1" style="margin-left: 140px">
+                                        <input type="checkbox" name="check1" id="check1" value="Accepted" style="margin-left: 10px" required/>I accept the <a href="#">Terms & Conditions</a>  
+                                    </div>
+                                </div><br>
+                                <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label>&nbsp;</label>
+                                    </div>
+                                    <div class="col span-2-of-3">
+                                        <input type="submit" name="submit" value="Sign Up!">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            </table> 
+        </section>
+        <script>
+        </script>
+    </body>
+</html>

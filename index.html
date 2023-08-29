@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="view-port" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="Resources/css/queries.css">
+        <title>HealthStack</title>
+        <link rel="icon" href="Resources/img/medical-report.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+        <script>
+            function checkvalue()
+            {
+                if(document.getElementById("news").checked)
+                    {
+                        document.getElementById("nonews").disabled=true;
+                    }
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="Resources/img/medical-report.png" style="margin-top:10px;width:90px">
+                    <ul class="main-nav">
+                        <li><a href="#features">About</a></li>
+                        <li><a href="#steps">How it works</a></li>
+                        <li><a href="Registration.html">Sign up</a></li>
+                        <li><a href="login.php">Sign In</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1>Keep track of your health like never before.</h1>
+                <a class="btn btn-full js--scroll-to-plans" href="login.php">Get started!</a>
+                <a class="btn btn-ghost js--scroll-to-start" href="#review">Show me more</a>
+            </div>
+        </header>
+        
+        <section class="section-features js--section-features" id="features">
+            <div class="row">
+                <h2>Let us do all the hardwork</h2>
+                <p class="long-copy">
+                    Hello, we are HealthStack, your new Blood Report Analyzer service. We know you are always busy. No time for go around doctor's office. So let us take care of that, we are really good at it, we promise!
+                </p>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3 box">
+                    <i class="ion-ios-stopwatch-outline icon-big"></i>
+                    <h3>Keep Track</h3>
+                    <p>
+                        Keep track of all of your test reports and have your medical history at the tip of your finger. No need of dealing with a huge amount of papers.
+                    </p>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <i class="ion-ios-paper-outline icon-big"></i>
+                    <h3>Analyse & Understand</h3>
+                    <p>
+                        We provide you better analyzed and easy to understand test reports while you sit at the comfort of your home.Suggestions related to test values and steps to be taken for proper care also included.
+                    </p>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <i class="ion-ios-pulse icon-big"></i>
+                    <h3>Stay Healthy</h3>
+                    <p>
+                        Get easy hold of your medical history by viewing our system generated graphs for each every test you have ever conducted.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-steps" id="steps">
+            <div class="row">
+                <h2>How it works &mdash; Simple as 1, 2, 3</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-2 steps-box">
+                    <img src="Resources/img/Phone5.png" alt="Analyzer app on iphone" class="app-screen">
+                </div>
+                <div class="col span-1-of-2 steps-box">
+                    <div class="works-step">
+                        <div>1</div>
+                        <p>Without wasting any time, get started by signing up today.</p>
+                    </div>
+                    <div class="works-step">
+                        <div>2</div>
+                        <p>Get your reports analyzed using our mobile app or website.</p>
+                    </div>
+                    <div class="works-step">
+                        <div>3</div>
+                        <p>Get a clear aspect of your reports and live tension free. See you the next time!</p>
+                    </div>
+                    <a href="#" class="btn-app"><img src="Resources/img/download-app.svg" alt="App store button"></a>
+                    <a href="#" class="btn-app"><img src="Resources/img/download-app-android.png" alt="Play store button"></a>
+                </div>
+            </div>
+        </section>
+                
+        <section class="section-testimonials" id="review">
+            <div class="row">
+                <h2>Happy to hear from our Customers</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        HealthStack is just awesome! The functioning of the website is very clear and easy to understand. It was very helpful to keep track of the reports of my family members. Very accurate results.
+                        <cite><img src="Resources/img/customer-1.jpg">Albert Dsouza</cite>
+                    </blockquote>
+                </div>
+                 <div class="col span-1-of-3">
+                    <blockquote>
+                        Actually a great website. Provides us with a better insight about our test reports and also the suggestions provided for each test value is very helpful.
+                        <cite><img src="Resources/img/customer-2.jpg">Janvi Thakar</cite>
+                    </blockquote>
+                </div>
+                 <div class="col span-1-of-3">
+                    <blockquote>
+                        I was looking for something which would help me to get a hold of my reports without going around the doctor's office again and again, and guess what? I found HealthStack. It made my work easier.
+                        <cite><img src="Resources/img/customer-3.jpg">Md. Hussain</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-form">
+            <div class="row">
+                <h2>We're happy to hear from you</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="response.php" class="contact-form" autocomplete="off">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                           <input type="text" name="name" id="name" placeholder="Your Name"  required> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                           <input type="email" name="email" id="email" placeholder="Your Email" required> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">How did you find us?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                           <select name="find-us" id="find-us">
+                               <option value="select" selected>Select</option>
+                               <option value="friends">Friends</option>
+                               <option value="search">Search Engine</option>
+                               <option value="ad">Advertisement</option>
+                               <option value="others">Others</option>
+                           </select> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Newsletter</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="news" id="news" value="Yes" checked>Yes, Please.
+                            <input type="hidden" id="nonews" name="news" value="No">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Drop us a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                           <textarea name="message" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                           <input type="submit" name="submit" onclick="checkvalue()" value="Send it!">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2021 by HealthStack. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
+
+
+
